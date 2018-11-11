@@ -4,146 +4,324 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="web development portfolio">
+        <meta name="author" content="Iris Anghel">
         <title>Iris Anghel Portfolio</title>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
-        <script src="https://use.fontawesome.com/9bf241663f.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
-        <header class="header">
+        <header>
             <div class="header__container">
                 <div class="header__main">
                     <h1 class="header__title">Port-</h1>
                     <h1 class="header__title">folio</h1>
-                    <h1 class="header__my-name">Iris Anghel</h1>
-                    <p>Front End Web Developer</p>
+                </div>
+                <div class="header__info">
+                    <p>Iris Anghel</p>
+                    <p>Front-End Web Developer</p>
                 </div>
             </div>
-            <h2 class="header__year">2018</h2>
-            <div class="arrow">
-                <p class="fa fa-angle-down fa-2x"></p>
-            </div>
+            <div>
+                <p class="arrow-down">&#8643;</p>
+            </div> 
+            <div class="hexagon-bg"></div>
         </header>
+        <div class="geometric-banner"></div>
 
-        <div class="container">
-            <main class="main">
-                <h1 class="main__title">Projects</h1>
+        <main>
 
-                <section class="featured-work">
-                    <!--  add  ghpages instead of github code link   -->
-                    <article class="card">
-                        <img class="card__image" src="img/map.PNG" alt="Cluj-Napoca map screenshot" width="300">
-                        <h3 class="card__title"><span>Cluj-Napoca map</span></h3>
-                        <p class="card__link"><a href="https://github.com/iris-anghel/Cluj-Napoca-React-Map" target="_blank">View code on GitHub</a></p>
-                    </article>
-                    
-                    <!--    add  ghpages   -->
-                    <article class="card">
-                        <img class="card__image" src="img/rest-review.PNG" alt="restaurants review map screenshot" width="300">
-                        <h3 class="card__title"><span>Restaurants review</span></h3>
-                        <p class="card__link"><a href="https://github.com/iris-anghel/restaurant-reviews" target="_blank">View code on GitHub</a></p>
-                    </article>
-                    
-                    <!--           add  ghpages   -->
-                    <article class="card">
-                        <img class="card__image" src="img/MyReads.PNG" alt="my reads app screenshot" width="300">
-                        <h3 class="card__title"><span>MyReads</span></h3>
-                        <p class="card__link"><a href="https://github.com/iris-anghel/MyReads" target="_blank">View code on GitHub</a></p>
-                    </article>
-                    
-                    <article class="card">
-                        <img class="card__image" src="img/street-art-portfolio.jpg" alt="street art photographer website screenshot" width="300">
-                        <h3 class="card__title"><span>Street Art Photographer Website</span></h3>
-                        <p class="card__link"><a href="https://github.com/iris-anghel/Street-Art-Photographer-Website" target="_blank">View project on GitHub</a></p>
-                    </article>
-                        
-                    <article class="card">
-                        <img class="card__image" src="img/matching-game.PNG" alt="memory game screenshot" width="300">
-                        <h3 class="card__title"><span>Memory game</span></h3>
-                        <p class="card__link"><a href="https://rawgit.com/iris-anghel/Memory-Game/master/index.html" target="_blank">Play game</a></p>
-                    </article>
-                    
-                    <article class="card">
-                        <img class="card__image" src="img/game.PNG" alt="arcade game screenshot" width="300">
-                        <h3 class="card__title"><span>Arcade game clone</span></h3>
-                        <p class="card__link"><a href="https://iris-anghel.github.io/arcade-game-clone/" target="_blank">Play game</a></p>
-                    </article>
-
-                    <article class="card">
-                        <img class="card__image" src="img/pixelart.PNG" alt="create your pixel art website screenshot"  width="300">
-                        <h3 class="card__title"><span>Pixel art maker</span></h3>
-                        <p class="card__link"><a href="https://rawgit.com/iris-anghel/Pixel-Art-Maker/master/index.html" target="_blank">View project</a></p>
-                    </article>
-
-                    <article class="card">
-                        <img class="card__image" src="img/petlove.PNG" alt="veterinary website screenshot" width="300">
-                        <h3 class="card__title"><span>Veterinary practice website</span></h3>
-                        <p class="card__link"><a href="https://rawgit.com/iris-anghel/Vet-practice-website/master/index.html" target="_blank">View project</a></p>
-                    </article>
-                    
-                    <!--
-                    <article class="card">
-                            <img class="card__image" src="img/cssgrid.png" alt="photos gallery website screenshot" width="300">
-                        <div class="card__content">
-                            <h3 class="card__title"><span>CSS Grid image gallery</span></h3>
-                            <p class="card__link"><a href="https://rawgit.com/iris-anghel/CSSGridImageGallery/master/index.html" target="_blank">View project</a></p>
+            <section>
+                <!-- 1 -->
+                <article class="project-container">
+                    <div class="project__image-container" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/maps-ipad.png" alt="Cluj-Napoca map screenshot" width="500px">
+                            <!-- add source set ??? -->
                         </div>
-                    </article>
--->
-                    <article class="card">
-                        <img class="card__image" src="img/todo.PNG" alt="todo list website screenshot" width="300">
-                        <h3 class="card__title"><span>To-do web app</span></h3>
-                        <p class="card__link"><a href="https://rawgit.com/iris-anghel/to-do-list/master/index.html" target="_blank">View project</a></p>
-                    </article>
+                    </div>
+                    <div class="project__content-container" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline left-aligned">Cluj-Napoca map</h2>
+                            <hr class="separator left-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A web application showing cafes from downtown Cluj-Napoca, Romania</p>
+                            <p>Built with React, Google Maps API & Foursquare API</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://github.com/iris-anghel/Cluj-Napoca-React-Map" target="_blank" rel="noopener noreferrer">View code on GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2 -->
+                <article class="project-container reversed-layout">
+                    <div class="project__image-container portrait" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/rest-rev-ipad.png" alt="restaurants review map screenshot" width="350px">
+                            <!-- add source set ??? -->
+                        </div>
+                    </div>
+                    <div class="project__content-container right-aligned" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline">Restaurants reviews</h2>
+                            <hr class="separator right-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A web application displaying restaurants information and reviews</p>
+                            <p>Built with Google Maps API</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://github.com/iris-anghel/restaurant-reviews" target="_blank" rel="noopener noreferrer">View code on GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3 -->
+                <article class="project-container">
+                    <div class="project__image-container portrait" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/myreads-ipad-portrait.png" alt="my reads app screenshot" width="350px">
+                            <!-- add source set ??? -->
+                        </div>
+                    </div>
+                    <div class="project__content-container" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline left-aligned">MyReads</h2>
+                            <hr class="separator left-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A bookshelves web application that allows searching and categorizing books</p>
+                            <p>Built with React</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://github.com/iris-anghel/MyReads" target="_blank" rel="noopener noreferrer">View code on GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4 -->
+                <article class="project-container reversed-layout">
+                    <div class="project__image-container portrait" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/portfolio-ipad.png" alt="street art photographer website screenshot" width="350px">
+                            <!-- add source set ??? -->
+                        </div>
+                    </div>
+                    <div class="project__content-container right-aligned" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline">Street Art photographer</h2>
+                            <hr class="separator right-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A mockup responsive website for a street art photographer</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://github.com/iris-anghel/Street-Art-Photographer-Website" target="_blank" rel="noopener noreferrer">View project on GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5 -->
+                <article class="project-container">
+                    <div class="project__image-container portrait" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/memory-ipad-portrait.png" alt="memory game screenshot" width="350px">
+                            <!-- add source set ??? -->
+                        </div>
+                    </div>
+                    <div class="project__content-container" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline left-aligned">Memory game</h2>
+                            <hr class="separator left-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A browser-based card matching game</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://rawgit.com/iris-anghel/Memory-Game/master/index.html" target="_blank" rel="noopener noreferrer">Play game</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6 -->
+                <article class="project-container reversed-layout">
+                    <div class="project__image-container" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/arcade-ipad.png" alt="arcade game screenshot" width="500px">
+                            <!-- add source set ??? -->
+                        </div>
+                    </div>
+                    <div class="project__content-container right-aligned" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline">Arcade game clone</h2>
+                            <hr class="separator right-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A browser-based Frogger game clone</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://iris-anghel.github.io/arcade-game-clone/" target="_blank" rel="noopener noreferrer">Play game</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7 -->
+                <article class="project-container">
+                    <div class="project__image-container" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/pixel-ipad.png" alt="create your pixel art website screenshot" width="500px">
+                            <!-- add source set ??? -->
+                        </div>
+                    </div>
+                    <div class="project__content-container" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline left-aligned">Pixel art maker</h2>
+                            <hr class="separator left-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A browser-based game for drawing pixel art on a customizable canvas</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://rawgit.com/iris-anghel/Pixel-Art-Maker/master/index.html" target="_blank" rel="noopener noreferrer">View project</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8 -->
+                <article class="project-container reversed-layout">
+                    <div class="project__image-container" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/petlove-ipad.png" alt="veterinary website screenshot" width="500px">
+                            <!-- add source set ??? -->
+                        </div>
+                    </div>
+                    <div class="project__content-container right-aligned" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline">Veterinary practice</h2>
+                            <hr class="separator right-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A mockup responsive website for a romanian veterinay practice</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://rawgit.com/iris-anghel/Vet-practice-website/master/index.html" target="_blank" rel="noopener noreferrer">View project</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9 -->
+                <article class="project-container">
+                    <div class="project__image-container" data-aos="zoom-in">
+                        <div class="project__image-bg">
+                            <img src="img/dune-ipad.png" alt="dune book quote machine website screenshot" width="500px">
+                            <!-- add source set ??? -->
+                        </div>
+                    </div>
+                    <div class="project__content-container" data-aos="fade-up">
+                        <div class="project__headline-container">
+                            <h2 class="project__headline left-aligned">Dune quote machine</h2>
+                            <hr class="separator left-hr">
+                        </div>
+                        <div class="muted-text">
+                            <p>A project displaying random Dune book quotes that can be tweeted</p>
+                        </div>
+                        <div>
+                            <a class="highlight" href="https://codepen.io/purplekhomsa/pen/MrEexe" target="_blank" rel="noopener noreferrer">View project</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            
+            <section class="about">
+                <span class="hexagon"></span>
+                <div>
+                    <div class="about__info" data-aos="fade-up">
+                        <h1 class="section__title">Hello.</h1>
+                        <p>I am Iris Anghel, clinical psychologist and web developer in the making.</p>
+
+                        <p>I'm particularly passionate about front end web development, design and user experience. My goal is to create websites that are clean, intuitive, responsive and accesssible.</p>
+                        <p class="muted-text">In my front end developer skill set are included a range of tools and resources for building product landing pages, portfolios and websites for small and medium businesses.</p>
+                        <p class="muted-text">I like to create a website from scratch, focusing on a mobile first approach. By paying more attention on the product content, I aim to provide a more pactical design.</p>
+                    </div>
+        
+                    <div class="about__courses" data-aos="fade-up">
+                        <h1 class="section__title">Courses.</h1>
+                        <p class="course-title about__skill-title"><img class="course-icons" src="img/udacity.svg" alt="Udacity logo">Front-end web development nanodegree</p>
+                        <p class="course-classes muted-text">Udacity &amp; Google | 2017-2018</p>
+                        <p class="course-title about__skill-title"><img class="course-icons" src="img/code.svg" alt="html code brackets">Computer analyst diploma</p>
+                        <p class="course-classes muted-text">FasttrackIT Cluj-Napoca, Romania | 2017</p>
+                    </div>
                     
-                    <article class="card">
-                        <img class="card__image" src="img/dune.PNG" alt="dune book quote machine website screenshot" width="300">
-                        <h3 class="card__title"><span>Dune quote machine</span></h3>
-                        <p class="card__link"><a href="https://codepen.io/purplekhomsa/pen/MrEexe" target="_blank">View project</a></p>
-                    </article>
-
-                </section>
-
-                <h1 class="about__title">About me</h1>
-
-                <section class="about">
-                    <div class="about__info">
-                        <p>Hi, I am Iris Anghel, clinical psychologist and web developer in the making.</p>
-                        <p>I'm particularly passionate about front end web development, design and user experience.</p>
-                        <p>My goal is to create websites that are clean, intuitive, responsive and optimized.</p>
+                    <div class="about__skills-container" data-aos="fade-up">
+                        <h1 class="section__title">Skills.</h1>
+                        <div>
+                            <div class="about__skill-title">
+                                <span class="triangle">&#9664; </span><h3>JavaScript</h3>
+                            </div>
+                            <p class="muted-text skills-body">jQuery | ES6 | React</p>
+                        </div>
+                        <div>
+                            <div class="about__skill-title">
+                                <span class="triangle">&#9664; </span><h3>Workflow</h3>
+                            </div>
+                            <p class="muted-text skills-body">Git | npm | Gulp</p>
+                        </div>
+                        <!-- <div>
+                            <div class="about__skill-title">
+                                <span class="triangle">&#9664; </span><h3>Preprocessors</h3>
+                            </div>
+                            <p class="muted-text">Sass</p>
+                        </div> -->
+                        <div>
+                            <div class="about__skill-title">
+                                <span class="triangle">&#9664; </span><h3>Modular CSS</h3>
+                            </div>
+                            <p class="muted-text skills-body">BEM | rscss</p>
+                        </div>
+                        <div>
+                            <div class="about__skill-title">
+                                <span class="triangle">&#9664; </span><h3>Frameworks</h3>
+                            </div>
+                            <p class="muted-text skills-body">Bootstrap 3 and 4</p>
+                        </div>
                     </div>
-                    <div class="about__courses">
-                        <p><img class="icons" src="img/udacity.svg" alt="Udacity logo">Front-end web development nanodegree graduate at Google &amp; Udacity - 2018</p>
-                        <p><img class="icons" src="img/code.svg" alt="html code brackets">Computer analyst diploma from FasttrackIT Cluj-Napoca, Romania - 2017</p>
-                    </div>
-                    <div class="about__skills-icons">
-                        <img class="logos" src="img/html-5.svg" alt="html5 logo">
-                        <img class="logos" src="img/css-3.svg" alt="css3 logo">
-                        <img class="logos" src="img/javascript.svg" alt="javascript logo">
-                        <img class="logos" src="img/jquery.svg" alt="jquery logo">
-                        <img class="logos" src="img/bootstrap.svg" alt="bootstraplogo">
-                        <img class="logos" src="img/nodejs.svg" alt="node js logo">
-                        <img class="logos" src="img/gulp.svg" alt="gulp logo">
-                        <img class="logos" src="img/react.svg" alt="react logo">
-                    </div>
-                </section>
-            </main>
-
-            <footer class="footer">
-                <p>Made with &hearts; by Iris Anghel &copy; 2018</p>
-                <p class="icons-credits">Lovely icons provided by <a href="https://svgporn.com/">SVGPorn</a></p>
-            </footer>
-
-            <div class="social">
-                <ul class="social__list">
-                    <li><a href="mailto:myname@gmail.com" target="_blank" class="fa fa-envelope fa-2x"></a></li>
-                    <li><a href="https://www.linkedin.com/in/iris-bianca-anghel-a85469144/" target="_blank" class="fa fa-linkedin fa-2x"></a></li>
-                    <li><a href="https://www.github.com/iris-anghel" class="fa fa-github fa-2x"></a></li>
-                    <li><a href="https://codepen.io/purplekhomsa/" target="_blank" class="fa fa-codepen fa-2x"></a></li>
-                </ul>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p class="arrow-down">&#8643;</p>
+            <p data-aos="fade-up">
+                <a href="mailto:myname@gmail.com" class="footer__email" target="_blank" rel="noopener noreferrer">hello@example.com</a>
+            </p>
+            <ul class="nav social-list">
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/iris-bianca-anghel-a85469144/" class="social-link" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.github.com/iris-anghel" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://codepen.io/purplekhomsa/" class="social-link" target="_blank" rel="noopener noreferrer">Codepen</a>
+                </li>
+            </ul>
+            
+            <div class="footer__credits">
+                <p class="muted-text">Iris Anghel &hearts; 2018</p>
             </div>
-        </div><!-- /.container-->
+        </footer>
+
+        <div class="geometric-banner"></div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000
+            });
+        </script>
     </body>
 </html>
